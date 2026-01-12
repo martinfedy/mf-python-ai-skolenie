@@ -1,13 +1,13 @@
 
 -- Create a better users table with more realistic fields
 CREATE TABLE users (
-    id SERIAL PRIMARY KEY,
-    first_name VARCHAR(40) NOT NULL,
-    last_name VARCHAR(40) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    occupation VARCHAR(60) NOT NULL,
-    salary NUMERIC(10,2) NOT NULL,
-    created_at DATE NOT NULL
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    occupation TEXT NOT NULL,
+    salary REAL NOT NULL,
+    created_at TEXT NOT NULL
 );
 
 -- Insert 20 users with realistic data
